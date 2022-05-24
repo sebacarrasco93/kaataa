@@ -34,8 +34,28 @@ class CreateCommand extends BaseCommand
 
     public function createFiles(OutputInterface $output, $name)
     {
-        $this->showSuccess($output, "Your files {$name} was created successfully");
+        $result_one = $this->createClassFile($name);
+        $result_two = $this->createTestFile($name);
 
-        return $this->success();
+        if ($result_one && $result_two) {
+            $this->showSuccess($output, "Your files {$name} was created successfully");
+            return $this->success();
+        }
+
+        return $this->showError($output);
+    }
+
+    public function createClassFile($name): bool
+    {
+        $class_file = $this->getStub('class');
+
+        return ! file_exists($class_file);
+    }
+
+    public function createTestFile($name): bool
+    {
+        $test_file = $this->getStub('test');
+
+        return file_exists($test_file);
     }
 }
