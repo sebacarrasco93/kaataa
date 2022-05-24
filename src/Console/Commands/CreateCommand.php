@@ -1,6 +1,6 @@
 <?php
 
-namespace SebaCarrasco93\Kaataa\Commands;
+namespace SebaCarrasco93\Kaataa\Console\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
