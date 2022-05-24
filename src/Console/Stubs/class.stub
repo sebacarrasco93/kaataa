@@ -1,8 +1,6 @@
 <?php
 
-namespace {{ namespace }};
-
-use {{ rootNamespace }}Src\Classes;
+namespace SebaCarrasco93\Kaataa\Classes;
 
 class {{ class }}
 {
