@@ -22,7 +22,7 @@ Of course, it's also has the **dd** helper (from Symfony, to Laravel), for easy 
 
 Create a Kata quickly! A Class and a Test will be created
 ```sh
-php dojo create:kata {NameOfYourkata}
+php dojo create:kata {NameOfYourKata}
 ```
 
 Or, maybe... Do you just want to make a class? No problem
@@ -32,7 +32,7 @@ php dojo make:class {ClassName}
 
 Did you say only a test? Sure
 ```sh
-php dojo make:test {Test}
+php dojo make:test {TestName}
 ```
 
 ### Installation
