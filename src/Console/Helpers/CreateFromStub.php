@@ -50,15 +50,10 @@ class CreateFromStub
 
     public function output()
     {
-        $newLines = [];
+        $keys = array_keys($this->replace);
+        $values = array_values($this->replace);
 
-        foreach ($this->content as $line) {
-            foreach ($this->replace as $found => $replace) {
-                $newLines[] = str_replace($found, $replace, $line);
-            }
-        }
-
-        $this->output = $newLines;
+        $this->output = (str_replace($keys, $values, $this->content));
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace SebaCarrasco93\Kaataa\Classes;
+namespace {{ namespace }};
 
 class {{ class }}
 {

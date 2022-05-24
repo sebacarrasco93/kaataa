@@ -7,19 +7,19 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MakeClassCommand extends BaseCommand
+class MakeTestCommand extends BaseCommand
 {
     private $name;
 
-    protected static $defaultName = 'make:class';
+    protected static $defaultName = 'make:test';
 
     protected function configure(): void
     {
-        $this->setDescription('Makes a class file')
-            ->setHelp('Makes class file')
+        $this->setDescription('Makes a test file')
+            ->setHelp('Makes test file')
             ->addArgument('name',
                 $this->name ? InputArgument::REQUIRED : InputArgument::OPTIONAL,
-                'Specify your new Kata class name',
+                'Specify your new Kata test name',
             )
         ;
     }
@@ -30,26 +30,26 @@ class MakeClassCommand extends BaseCommand
             return $this->createFile($output, $name);
         }
 
-        return $this->invalid($output, 'Please set your Kata class name');
+        return $this->invalid($output, 'Please set your Kata test name');
     }
 
     public function createFile(OutputInterface $output, $name)
     {
         $create = new CreateFromStub();
         
-        $result = $create->stub('class')
+        $result = $create->stub('test')
             ->content()
             ->replace([
-                '{{ namespace }}' => 'SebaCarrasco93\Kaataa\Classes',
-                '{{ class }}' => $name,
-            ])->inDirectory('Classes')
+                '{{ namespace }}' => 'Tests',
+                '{{ class }}' => $name . 'Test',
+            ])->inDirectory('Tests')
             ->output()
-            ->fileName($name)
+            ->fileName($name . 'Test')
             ->create()
         ;
 
         if ($result) {
-            $this->success($output, "Your class {$name} was created");
+            $this->success($output, "Your test {$name} was created");
 
             return $this->successResult();
         }
