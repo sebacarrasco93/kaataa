@@ -42,7 +42,7 @@ class MakeTestCommand extends BaseCommand
             ->replace([
                 '{{ namespace }}' => 'Tests',
                 '{{ class }}' => $name . 'Test',
-            ])->inDirectory('Tests')
+            ])->inDirectory('../tests')
             ->output()
             ->fileName($name . 'Test')
             ->create()
