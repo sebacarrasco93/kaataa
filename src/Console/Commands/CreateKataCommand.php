@@ -3,14 +3,15 @@
 namespace SebaCarrasco93\Kaataa\Console\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class CreateCommand extends BaseCommand
+class CreateKataCommand extends BaseCommand
 {
     private $name;
 
-    protected static $defaultName = 'create';
+    protected static $defaultName = 'create:kata';
 
     protected function configure(): void
     {
@@ -34,11 +35,11 @@ class CreateCommand extends BaseCommand
 
     public function createFiles(OutputInterface $output, $name)
     {
-        $result_one = $this->createClassFile($name);
-        $result_two = $this->createTestFile($name);
+        $result_one = $this->createClassFile($name, $output);
+        $result_two = $this->createTestFile($name, $output);
 
         if ($result_one && $result_two) {
-            $this->success($output, "Your files {$name} was created");
+            $this->success($output);
 
             return $this->successResult();
         }
@@ -46,17 +47,28 @@ class CreateCommand extends BaseCommand
         return $this->error($output);
     }
 
-    public function createClassFile($name): bool
+    private function callAnotherCommand(string $command, array $arguments, OutputInterface $output)
     {
-        $class_file = $this->getStub('class');
+        $command = $this->getApplication()->find($command);
 
-        return file_exists($class_file);
+        $greetInput = new ArrayInput($arguments);
+        
+        $returnCode = $command->run($greetInput, $output);
+
+        return true;
     }
 
-    public function createTestFile($name): bool
+    public function createClassFile($name, OutputInterface $output): bool
     {
-        $test_file = $this->getStub('test');
+        return $this->callAnotherCommand('make:class', [
+            'name' => $name
+        ], $output);
+    }
 
-        return file_exists($test_file);
+    public function createTestFile($name, OutputInterface $output): bool
+    {
+        return $this->callAnotherCommand('make:test', [
+            'name' => $name
+        ], $output);
     }
 }
