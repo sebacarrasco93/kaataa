@@ -40,10 +40,10 @@ class MakeTestCommand extends BaseCommand
         $create->stub('class')
             ->content()
             ->replace([
-                '{{ class }}' => $name . 'Test'
+                '{{ class }}' => $name
             ])->inDirectory('Classes')
             ->output()
-            ->fileName($name . 'Test')
+            ->fileName($name)
             ->create()
         ;
 
