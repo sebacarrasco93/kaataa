@@ -7,7 +7,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MakeTestCommand extends BaseCommand
+class MakeClassCommand extends BaseCommand
 {
     private $name;
 
@@ -15,11 +15,11 @@ class MakeTestCommand extends BaseCommand
 
     protected function configure(): void
     {
-        $this->setDescription('Makes a test file')
-            ->setHelp('Makes test file')
+        $this->setDescription('Makes a class file')
+            ->setHelp('Makes class file')
             ->addArgument('name',
                 $this->name ? InputArgument::REQUIRED : InputArgument::OPTIONAL,
-                'Specify your new Kata test name',
+                'Specify your new Kata class name',
             )
         ;
     }
@@ -30,7 +30,7 @@ class MakeTestCommand extends BaseCommand
             return $this->createFile($output, $name);
         }
 
-        return $this->invalid($output, 'Please set your Kata test name');
+        return $this->invalid($output, 'Please set your Kata class name');
     }
 
     public function createFile(OutputInterface $output, $name)
