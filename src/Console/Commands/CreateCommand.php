@@ -18,7 +18,7 @@ class CreateCommand extends BaseCommand
             ->setHelp('Create a class and a test file')
             ->addArgument('name',
                 $this->name ? InputArgument::REQUIRED : InputArgument::OPTIONAL,
-                'Specify the name for class and test file'
+                'Specify your new kata name',
             )
         ;
     }
@@ -29,7 +29,7 @@ class CreateCommand extends BaseCommand
             return $this->createFiles($output, $name);
         }
 
-        return $this->showInvalid($output);
+        return $this->invalid($output, 'Please set your kata name');
     }
 
     public function createFiles(OutputInterface $output, $name)
@@ -38,18 +38,19 @@ class CreateCommand extends BaseCommand
         $result_two = $this->createTestFile($name);
 
         if ($result_one && $result_two) {
-            $this->showSuccess($output, "Your files {$name} was created successfully");
-            return $this->success();
+            $this->success($output, "Your files {$name} was created");
+
+            return $this->successResult();
         }
 
-        return $this->showError($output);
+        return $this->error($output);
     }
 
     public function createClassFile($name): bool
     {
         $class_file = $this->getStub('class');
 
-        return ! file_exists($class_file);
+        return file_exists($class_file);
     }
 
     public function createTestFile($name): bool
