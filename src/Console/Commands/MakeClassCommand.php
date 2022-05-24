@@ -11,7 +11,7 @@ class MakeClassCommand extends BaseCommand
 {
     private $name;
 
-    protected static $defaultName = 'make:test';
+    protected static $defaultName = 'make:class';
 
     protected function configure(): void
     {
@@ -37,7 +37,7 @@ class MakeClassCommand extends BaseCommand
     {
         $create = new CreateFromStub();
         
-        $create->stub('class')
+        $result = $create->stub('class')
             ->content()
             ->replace([
                 '{{ class }}' => $name
@@ -47,49 +47,12 @@ class MakeClassCommand extends BaseCommand
             ->create()
         ;
 
-        $result_one = $this->createClassFile($name);
-
-        if ($result_one) {
-            $this->success($output, "Your test {$name} was created");
+        if ($result) {
+            $this->success($output, "Your class {$name} was created");
 
             return $this->successResult();
         }
 
         return $this->error($output);
-    }
-
-    private $location = __DIR__ . '/../../Classes/';
-
-    public function createClassFile($name): bool
-    {
-        @mkdir($this->location);
-        $fileContent = $this->processTemplateFromFile('class');
-
-        return file_put_contents($this->location . $name, $fileContent);
-    }
-
-    public function replace()
-    {
-        return [
-            '{{ class }}' => 'ClassName', // <- TODO Hardcoded
-
-            // '{{ namespace }}' => 'Tests',
-            // '{{ rootNamespace }}' => 'SebaCarrasco93\Kaataa',
-        ];
-    }
-
-    public function processTemplateFromFile($file)
-    {
-        $lines = file($this->getStub($file));
-
-        $newLines = [];
-
-        foreach ($lines as $line) {
-            foreach ($this->replace() as $found => $replace) {
-                $newLines[] = str_replace($found, $replace, $line);
-            }
-        }
-
-        return $newLines;
     }
 }
