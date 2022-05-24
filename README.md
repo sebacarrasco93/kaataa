@@ -1,6 +1,6 @@
 # Kaataa - PHP
 
-improve your programming skills by solving exercises. Verify your solutions with unit tests.
+Improve your programming skills by solving exercises. Verify your solutions with unit tests.
 
 ## What is a Kata?
 
