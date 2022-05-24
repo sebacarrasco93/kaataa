@@ -1,0 +1,21 @@
+{
+    "name": "sebacarrasco93/kaataa",
+    "description": "Boilerplate to start practicing your code katas",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SebaCarrasco93\\Kaataa\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Seba Carrasco Poblete",
+            "email": "sebacarrasco93@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
