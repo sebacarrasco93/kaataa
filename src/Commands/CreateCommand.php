@@ -26,15 +26,15 @@ class CreateCommand extends BaseCommand
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         if ($name = $input->getArgument('name')) {
-            return $this->createProject($output, $name);
+            return $this->createFiles($output, $name);
         }
 
         return $this->showInvalid($output);
     }
 
-    public function createProject(OutputInterface $output, $name)
+    public function createFiles(OutputInterface $output, $name)
     {
-        $this->showSuccess($output, "Your file {$name} was created successfully");
+        $this->showSuccess($output, "Your files {$name} was created successfully");
 
         return $this->success();
     }
