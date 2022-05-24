@@ -58,7 +58,7 @@ class CreateFromStub
         return $this;
     }
 
-    public function inDirectory($name = 'Classes')
+    public function inDirectory($name)
     {
         $this->directory = $this->destination . $name;
         @mkdir($this->directory);
@@ -68,7 +68,7 @@ class CreateFromStub
 
     public function fileName($fileName)
     {
-        $this->fileName = $fileName;
+        $this->fileName = $fileName . '.php';
 
         return $this;
     }
@@ -77,6 +77,12 @@ class CreateFromStub
     {
         $fileContent = $this->output;
 
-        return file_put_contents($this->directory . '/' . $this->fileName . '.php', $fileContent);
+        $file = $this->directory . '/' . $this->fileName;
+
+        if (! file_exists($file)) {
+            return file_put_contents($file, $fileContent);
+        }
+
+        throw new \Exception("File {$this->fileName} already exists");
     }
 }
