@@ -55,9 +55,4 @@ class BaseCommand extends Command
 
         return $this->invalidResult();
     }
-
-    protected function getStub($filename)
-    {
-        return __DIR__ . "/../Stubs/{$filename}.stub";
-    }
 }

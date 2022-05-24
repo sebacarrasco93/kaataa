@@ -2,6 +2,7 @@
 
 namespace SebaCarrasco93\Kaataa\Console\Commands;
 
+use SebaCarrasco93\Kaataa\Console\Helpers\CreateFromStub;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -34,6 +35,18 @@ class MakeTestCommand extends BaseCommand
 
     public function createFile(OutputInterface $output, $name)
     {
+        $create = new CreateFromStub();
+        
+        $create->stub('class')
+            ->content()
+            ->replace([
+                '{{ class }}' => $name . 'Test'
+            ])->inDirectory('Classes')
+            ->output()
+            ->fileName($name . 'Test')
+            ->create()
+        ;
+
         $result_one = $this->createClassFile($name);
 
         if ($result_one) {
