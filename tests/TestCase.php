@@ -2,9 +2,9 @@
 
 namespace Tests;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use SebaCarrasco93\KaataaCore\Tests\BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
-    // ...
+    // Your custom rules...
 }
