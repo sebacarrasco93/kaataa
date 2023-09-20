@@ -10,7 +10,7 @@ If you don't know what it is, you can look at this cool [introduction](https://g
 
 ## What is Kaataa?
 
-Kaataa is a PHP open source scaffolding project inspired heavily in simplicity of [Laravel](https://laravel.com), which is used to kick start immediately, without having to do anything extra.
+Kaataa is a PHP open source project inspired heavily in simplicity of [Laravel](https://laravel.com). Kick start immediately to practice and improve with Katas.
 
 It is supercharged with:
 
