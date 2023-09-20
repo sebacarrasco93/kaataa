@@ -15,10 +15,13 @@
             "email": "sebacarrasco93@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/seba/Code/kata/kaataa-core"
+        }
+    ],
     "require": {
-        "phpunit/phpunit": "^9.5",
-        "mockery/mockery": "^1.5",
-        "symfony/console": "^6.0",
-        "symfony/var-dumper": "^6.0"
+        "sebacarrasco93/kaataa-core": "dev-dev"
     }
 }

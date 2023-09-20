@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9620b798f8296865f42fb3b942f8b50a",
+    "content-hash": "8f0631e251e38be6207904db63c4c068",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -912,6 +912,41 @@
                 "source": "https://github.com/php-fig/container/tree/2.0.2"
             },
             "time": "2021-11-05T16:47:00+00:00"
+        },
+        {
+            "name": "sebacarrasco93/kaataa-core",
+            "version": "dev-dev",
+            "dist": {
+                "type": "path",
+                "url": "/Users/seba/Code/kata/kaataa-core",
+                "reference": "2ec9c1e13cca226d0dd52e601484bc01c44779e0"
+            },
+            "require": {
+                "mockery/mockery": "^1.5",
+                "phpunit/phpunit": "^9.5",
+                "symfony/console": "^6.0",
+                "symfony/var-dumper": "^6.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "SebaCarrasco93\\KaataaCore\\": "src/",
+                    "Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Seba Carrasco Poblete",
+                    "email": "sebacarrasco93@gmail.com"
+                }
+            ],
+            "description": "Core files for sebacarrasco93/kaataa",
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "sebastian/cli-parser",
@@ -2670,7 +2705,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "sebacarrasco93/kaataa-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
