@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/sebacarrasco93/kaataa" target="_blank"><img src="https://res.cloudinary.com/super-admin/image/upload/v1695236058/php-packages/kaataa/Kaataa_v1.0.0.png" width="400"></a></p>
+<p align="center"><a href="https://github.com/sebacarrasco93/kaataa" target="_blank"><img src="https://res.cloudinary.com/super-admin/image/upload/v1695245597/php-packages/kaataa/Kaataa_v1.0.0.png" width="400"></a></p>
 
 # Kaataa
 
