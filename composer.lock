@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f0631e251e38be6207904db63c4c068",
+    "content-hash": "f70a81f6f409663a273d3ea02acf2968",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -919,7 +919,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/seba/Code/kata/kaataa-core",
-                "reference": "2ec9c1e13cca226d0dd52e601484bc01c44779e0"
+                "reference": "b8f4215197b8608e80118efe028c89869d34ec61"
             },
             "require": {
                 "mockery/mockery": "^1.5",
@@ -2710,7 +2710,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^8.1"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }
