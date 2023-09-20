@@ -1,6 +1,7 @@
 {
     "name": "sebacarrasco93/kaataa",
-    "description": "Boilerplate to start practicing your code katas",
+    "description": "Start practicing your code katas and improving your skills",
+    "keywords": ["kaataa", "php", "kata", "phpunit", "mockery"],
     "type": "project",
     "license": "MIT",
     "autoload": {

@@ -849,7 +849,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/seba/Code/kata/kaataa-core",
-                "reference": "43304d44d059a71324780bde03714a46dcc557c5"
+                "reference": "bf20b97ac2fb914793253c8d20be853b4c36f166"
             },
             "require": {
                 "mockery/mockery": "^1.5",
@@ -873,7 +873,15 @@
                     "email": "sebacarrasco93@gmail.com"
                 }
             ],
-            "description": "Core files for sebacarrasco93/kaataa",
+            "description": "Core files for kaataa",
+            "keywords": [
+                "core",
+                "kaataa-core",
+                "kata",
+                "mockery",
+                "php",
+                "phpunit"
+            ],
             "transport-options": {
                 "relative": false
             }
