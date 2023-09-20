@@ -38,6 +38,11 @@ Did you want to create only a test? Sure
 php dojo make:test {TestName}
 ```
 
+### Requirements
+
+- [x] PHP 8.1 or greater
+- [x] Composer 2
+
 ### Installation
 
 ```sh
