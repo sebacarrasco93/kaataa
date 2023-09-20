@@ -1,3 +1,5 @@
+<p align="center"><a href="https://github.com/sebacarrasco93/kaataa" target="_blank"><img src="https://res.cloudinary.com/super-admin/image/upload/v1695234666/php-packages/kaataa/Kaataa_logo_v1.0.0.png" width="400"></a></p>
+
 # Kaataa
 
 Improve your programming skills by solving exercises. Verify your solutions with unit tests.
