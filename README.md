@@ -16,7 +16,7 @@ It is supercharged with:
 - [x] Mockery
 - [ ] Pest (soon)
 
-Of course, it's also has the **dd** helper (from Symfony, to Laravel), for easy debugging while you get fun on it.
+Of course, it's also has the **dd** helper, from [Symfony](https://symfony.com), for easy debugging while you get fun on it.
 
 ### How to use?
 
