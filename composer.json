@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SebaCarrasco93\\Kaataa\\": "src/",
+            "Kaataa\\": "src/",
             "Tests\\": "tests/"
         }
     },
