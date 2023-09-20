@@ -32,7 +32,7 @@ Or, maybe... Do you just want to make a class? No problem
 php dojo make:class {ClassName}
 ```
 
-Did you want to create only a test? Sure
+Only a test? Of course
 
 ```sh
 php dojo make:test {TestName}
