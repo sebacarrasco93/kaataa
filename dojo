@@ -1,17 +1,9 @@
 #!/usr/bin/env php
 <?php
 
+use SebaCarrasco93\KaataaCore\Console\Dojo;
+
 require __DIR__ . '/vendor/autoload.php';
 
-use SebaCarrasco93\KaataaCore\Console\Commands\CreateKataCommand;
-use SebaCarrasco93\KaataaCore\Console\Commands\MakeClassCommand;
-use SebaCarrasco93\KaataaCore\Console\Commands\MakeTestCommand;
-use Symfony\Component\Console\Application;
-
-$application = new Application();
-
-$application->add(new CreateKataCommand());
-$application->add(new MakeClassCommand());
-$application->add(new MakeTestCommand());
-
-$application->run();
+// 🥋 Start
+Dojo::start();

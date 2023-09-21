@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e14509235224a586e7b8ec3a47a01fd",
+    "content-hash": "08230d412fa133273543262c02973622",
     "packages": [
         {
             "name": "hamcrest/hamcrest-php",
@@ -845,16 +845,16 @@
         },
         {
             "name": "sebacarrasco93/kaataa-core",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebacarrasco93/kaataa-core.git",
-                "reference": "3d7e83d5ea5a29aa95c68a4d01cc2320a0723943"
+                "reference": "63f2a1e7be8781a5cd08618b9dc10f33b55ea13b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebacarrasco93/kaataa-core/zipball/3d7e83d5ea5a29aa95c68a4d01cc2320a0723943",
-                "reference": "3d7e83d5ea5a29aa95c68a4d01cc2320a0723943",
+                "url": "https://api.github.com/repos/sebacarrasco93/kaataa-core/zipball/63f2a1e7be8781a5cd08618b9dc10f33b55ea13b",
+                "reference": "63f2a1e7be8781a5cd08618b9dc10f33b55ea13b",
                 "shasum": ""
             },
             "require": {
@@ -891,9 +891,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sebacarrasco93/kaataa-core/issues",
-                "source": "https://github.com/sebacarrasco93/kaataa-core/tree/0.0.1"
+                "source": "https://github.com/sebacarrasco93/kaataa-core/tree/0.0.2"
             },
-            "time": "2023-09-21T04:32:28+00:00"
+            "time": "2023-09-21T05:40:13+00:00"
         },
         {
             "name": "sebastian/cli-parser",
