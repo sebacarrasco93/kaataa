@@ -26,6 +26,17 @@ It is supercharged with:
 
 Of course, it's also has the **dd** helper from [Symfony](https://symfony.com) for easy debugging while you get fun on it.
 
+## Requirements
+
+- [x] PHP 8.1 or greater
+- [x] Composer 2
+
+## Installation
+
+```sh
+composer create-project sebacarrasco93/kaataa {your_project_name}
+```
+
 ## Quick start
 
 Automatically create Class and Test files
@@ -46,17 +57,6 @@ Only a test? Of course
 
 ```sh
 php dojo make:test {TestName}
-```
-
-## Requirements
-
-- [x] PHP 8.1 or greater
-- [x] Composer 2
-
-## Installation
-
-```sh
-composer create-project sebacarrasco93/kaataa {your_project_name}
 ```
 
 ## Run tests
