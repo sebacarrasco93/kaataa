@@ -2,17 +2,17 @@
 
 # Kaataa
 
-😎 Improve your programming skills by solving challenges.
+😎 Improve your programming skills by solving challenges
 
-✅ Verify your solutions with Unit Tests.
+✅ Verify your solutions with Unit Tests
 
-💡 A really good start point to understanding TDD.
+💡 A really good start point to understanding TDD
 
 ## What is a Kata?
 
 In programming, a kata is an exercise which helps you to enhance skills through practice and repetition.
 
-If you want more information, please check [Awesome Katas](https://github.com/gamontal/awesome-katas#introduction)
+If you want more information, please check [Awesome Katas](https://github.com/gamontal/awesome-katas#introduction).
 
 ## Why Kaataa?
 
