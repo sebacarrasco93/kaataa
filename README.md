@@ -2,15 +2,17 @@
 
 # Kaataa
 
-Improve your programming skills by solving exercises. Verify your solutions with unit tests.
+Improve your programming skills by solving exercises. Verify your solutions with Unit Tests.
 
 ## What is a Kata?
 
-If you don't know what it is, you can look at this cool [introduction](https://github.com/gamontal/awesome-katas#introduction)
+A kata is a an exercise in programming which helps you to enhance skills through practice and repetition.
 
-## What is Kaataa?
+If you want more information, please check [Awesome Katas](https://github.com/gamontal/awesome-katas#introduction)
 
-Kaataa is a PHP open source project inspired heavily in simplicity of [Laravel](https://laravel.com). Kick start immediately to practice and improve with Katas.
+## Why Kaataa?
+
+Kaataa is a open source project heavily inspired in simplicity of [Laravel](https://laravel.com). With Kaataa, you can take advantage from Unit Tests.
 
 It is supercharged with:
 
@@ -48,7 +50,7 @@ php dojo make:test {TestName}
 ### Installation
 
 ```sh
-composer create-project sebacarrasco93/kaataa example-kata
+composer create-project sebacarrasco93/kaataa {your_project_name}
 ```
 
 ### Run tests
