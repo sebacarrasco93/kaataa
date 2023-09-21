@@ -2,11 +2,15 @@
 
 # Kaataa
 
-Improve your programming skills by solving exercises. Verify your solutions with Unit Tests.
+😎 Improve your programming skills by solving challenges.
+
+✅ Verify your solutions with Unit Tests.
+
+💡 A really good start point to understanding TDD.
 
 ## What is a Kata?
 
-A kata is a an exercise in programming which helps you to enhance skills through practice and repetition.
+In programming, a kata is an exercise which helps you to enhance skills through practice and repetition.
 
 If you want more information, please check [Awesome Katas](https://github.com/gamontal/awesome-katas#introduction)
 
@@ -22,15 +26,17 @@ It is supercharged with:
 
 Of course, it's also has the **dd** helper from [Symfony](https://symfony.com) for easy debugging while you get fun on it.
 
-### How to use?
+## Quick start
 
-Create a Kata quickly! A Class and a Test will be created
+Automatically create Class and Test files
 
 ```sh
 php dojo create:kata {NameOfYourKata}
 ```
 
-Or, maybe... Do you just want to make a class? No problem
+## Another commands
+
+Want to make a only a class? No problem
 
 ```sh
 php dojo make:class {ClassName}
@@ -42,18 +48,18 @@ Only a test? Of course
 php dojo make:test {TestName}
 ```
 
-### Requirements
+## Requirements
 
 - [x] PHP 8.1 or greater
 - [x] Composer 2
 
-### Installation
+## Installation
 
 ```sh
 composer create-project sebacarrasco93/kaataa {your_project_name}
 ```
 
-### Run tests
+## Run tests
 
 From composer (easier)
 

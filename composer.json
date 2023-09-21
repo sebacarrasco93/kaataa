@@ -1,6 +1,6 @@
 {
     "name": "sebacarrasco93/kaataa",
-    "description": "Start practicing your code katas and improving your skills",
+    "description": "Start practicing code katas and improving your skills",
     "keywords": ["kaataa", "php", "kata", "phpunit", "mockery"],
     "type": "project",
     "license": "MIT",
