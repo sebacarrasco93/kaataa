@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f70a81f6f409663a273d3ea02acf2968",
+    "content-hash": "7e14509235224a586e7b8ec3a47a01fd",
     "packages": [
         {
             "name": "hamcrest/hamcrest-php",
@@ -845,14 +845,21 @@
         },
         {
             "name": "sebacarrasco93/kaataa-core",
-            "version": "dev-dev",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebacarrasco93/kaataa-core.git",
+                "reference": "3d7e83d5ea5a29aa95c68a4d01cc2320a0723943"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/seba/Code/kata/kaataa-core",
-                "reference": "bf20b97ac2fb914793253c8d20be853b4c36f166"
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebacarrasco93/kaataa-core/zipball/3d7e83d5ea5a29aa95c68a4d01cc2320a0723943",
+                "reference": "3d7e83d5ea5a29aa95c68a4d01cc2320a0723943",
+                "shasum": ""
             },
             "require": {
                 "mockery/mockery": "^1.5",
+                "php": "^8.1",
                 "phpunit/phpunit": "^10.3",
                 "symfony/console": "^6.3",
                 "symfony/var-dumper": "^6.3"
@@ -860,10 +867,11 @@
             "type": "package",
             "autoload": {
                 "psr-4": {
-                    "SebaCarrasco93\\KaataaCore\\": "src/",
-                    "Tests\\": "tests/"
+                    "Tests\\": "tests/",
+                    "SebaCarrasco93\\KaataaCore\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -875,16 +883,17 @@
             ],
             "description": "Core files for kaataa",
             "keywords": [
-                "core",
                 "kaataa-core",
                 "kata",
                 "mockery",
                 "php",
                 "phpunit"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/sebacarrasco93/kaataa-core/issues",
+                "source": "https://github.com/sebacarrasco93/kaataa-core/tree/0.0.1"
+            },
+            "time": "2023-09-21T04:32:28+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -2594,9 +2603,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sebacarrasco93/kaataa-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
