@@ -5,6 +5,9 @@
     "type": "project",
     "license": "MIT",
     "autoload": {
+        "files": [
+            "extra/helpers.php"
+        ],
         "psr-4": {
             "Kaataa\\": "src/",
             "Tests\\": "tests/"
